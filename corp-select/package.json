@@ -1,0 +1,32 @@
+{
+  "name": "bk-corp-select",
+  "version": "0.1.1",
+  "description": "BkCorpSelect Angular 2 Component",
+  "repository": "https://aqdes-stash.cm.es/stash/scm/arqteaqac/corp-select.git",
+  "main": "index.js",
+  "scripts": {
+    "dist": "bk-lib-dist",
+    "preversion": "bk-lib-preversion",
+    "start": "bk-webpack-dev-server",
+    "test": "bk-test",
+    "version": "bk-version",
+    "version:major": "bk-version-major",
+    "version:minor": "bk-version-minor",
+    "version:patch": "bk-version-patch",
+    "lint": "tslint -c tslint.json demo/polyfills.ts",
+    "wp:prod": "rimraf dist && webpack --config move-to-bankular/@bankular/development-tools/webpack2-config/webpack.prod.js --progress --profile --bail"
+  },
+  "dependencies": {
+    "@angular/common": "^2.2.1",
+    "@angular/core": "^2.2.1",
+    "@angular/forms": "^2.2.1",
+    "corp-styles": "file:../corp-styles",
+    "rxjs": "^5.0.0",
+    "webpack-dev-server": "^2.4.5",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "@bankular/development-tools": "file:../development-tools"
+  },
+  "license": "UNLICENSED"
+}

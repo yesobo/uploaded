@@ -1,0 +1,13 @@
+<bk-corp-select name="mySelect" label="Obligatorio" 
+  placeholder="placeholder ejemplo" disabled="false"
+  [(ngModel)]="model.cityName" #obligatorio="ngModel">
+
+    <bk-corp-select-option *ngFor="let city of cities" [value]="city.value">
+      {{city.label}}
+    </bk-corp-select-option>
+
+</bk-corp-select>
+<p class="error-text" [hidden]="obligatorio.valid">Campo inválido</p>
+<div style="margin-top: 20px">
+  Valor seleccionado: <span>{{model?.cityName}}</span>
+</div>
