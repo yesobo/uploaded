@@ -1,3 +1,0 @@
-{
-  "extends": "./move-to-bankular/@bankular/development-tools/webpack2-config/tsconfig.json"
-}
